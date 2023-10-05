@@ -1,0 +1,10 @@
+package com.giovani.banco.modelos;
+
+public interface IConta {
+	
+	void depositar();
+	void sacar();
+	void transferir();
+	void imprimirExtrato();
+
+}

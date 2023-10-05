@@ -1,0 +1,5 @@
+package com.giovani.banco.modelos;
+
+public interface IConta {
+
+}

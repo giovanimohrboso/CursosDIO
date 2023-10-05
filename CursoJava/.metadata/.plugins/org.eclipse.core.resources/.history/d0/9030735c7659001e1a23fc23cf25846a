@@ -1,0 +1,64 @@
+package com.giovani.candidatura;
+
+import java.util.concurrent.ThreadLocalRandom;
+
+public class ProcessoSelectivo {
+
+	public static void main(String[] args) {
+		System.out.println("PROCESSO SELETIVO");
+		
+		String[] candidatos = {"Joao","Maria","Giovani","Sandra","Nero","Apollo","Thor","Juvenal","Barbara"};
+		String[] candidatosSelecionados;
+		System.out.println("Temos "+candidatos.length+" candidaturas");
+		if (candidatos.length > 5) {
+			candidatosSelecionados = selecionarCandidatos(candidatos,2000);
+		}else {
+			candidatosSelecionados = candidatos;
+		}
+		
+		imprimirListaCandidatosSelecionados(candidatosSelecionados);
+	}
+	
+	static String[] selecionarCandidatos (String[] candidatos,double salarioBase) {
+		
+		String[] candidatosSelecionados = new String[5];
+		int contador=0;
+		double salarioPretendido;
+		for (String candidato:candidatos) {
+			salarioPretendido = gerarSalario();
+			System.out.println("Candidato "+candidato+" Tem o salario Pretendido de "+salarioPretendido);
+			if (analizarCandidato(salarioPretendido,salarioBase)) {
+				candidatosSelecionados[contador] = candidato.toString();
+				contador++;
+			}
+			if (contador == 5) break;
+		}
+		
+		return candidatosSelecionados;
+		
+	}
+	
+	static void imprimirListaCandidatosSelecionados(String[] candidatos) {
+		for (String candidato:candidatos) {
+			System.out.println("Candidato "+candidato.toString()+" Selecionado");
+		}
+	}
+	
+	static boolean analizarCandidato(double salarioPretendido,double salarioBase) {
+		
+		if (salarioPretendido < salarioBase) {
+			return true;
+		}else if (salarioPretendido == salarioBase) {
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	
+	
+	static double gerarSalario() {
+		return ThreadLocalRandom.current().nextDouble(1900,2200);
+	}
+
+}

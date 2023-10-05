@@ -1,0 +1,19 @@
+package com.giovani.controlesDeFluxo;
+
+public class ExemploExcecao {
+	public static void main(String[] args) {
+		
+		try {
+			System.out.println(formatarCep("1234567"));
+		} catch (CepInvalidoException e) {
+			System.out.println("Cep Invalido");
+		}
+		
+	}
+	static String formatarCep(String cep) throws CepInvalidoException{
+		
+		if (cep.length() != 8) throw new CepInvalidoException();
+		
+		return "12.123-000";
+	}
+}

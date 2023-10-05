@@ -1,0 +1,26 @@
+package com.giovani.controlesDeFluxo;
+
+public class Repeticoes {
+
+	public static void main(String[] args) {
+
+		System.out.println("Contando Carneirinhos");
+		for (int carneirinhos = 1;(carneirinhos <= 10);carneirinhos++) {
+			System.out.println("->"+carneirinhos);
+		}
+		
+		System.out.println("Contando Alunos");
+		String alunos[] = {"Felipe","Joao","Maria","Ana"};
+		
+		for(int x=0;x<alunos.length;x++) {
+			System.out.println(alunos[x]);
+		}
+		
+		for(String aluno:alunos) {
+			System.out.println(aluno);
+		}
+		
+
+	}
+
+}

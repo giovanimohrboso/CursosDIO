@@ -1,0 +1,41 @@
+package com.giovani.banco;
+
+import com.giovani.banco.modelos.Banco;
+import com.giovani.banco.modelos.Conta;
+import com.giovani.banco.modelos.ContaCorrente;
+import com.giovani.banco.modelos.ContaPoupanca;
+
+public class Principal {
+	public static void main(String[] args) {
+		Banco banco = new Banco();
+		
+		Conta cc = new ContaCorrente();
+		
+		banco.setContas(cc);
+		
+		cc.depositar(1000);
+		
+		ContaPoupanca cp = new ContaPoupanca();
+		banco.setContas(cp);
+		
+		cc.transferir(50, cp);
+		
+		cp.gerarJuros();
+		
+		
+	
+		
+		banco.listarContas();
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+
+}

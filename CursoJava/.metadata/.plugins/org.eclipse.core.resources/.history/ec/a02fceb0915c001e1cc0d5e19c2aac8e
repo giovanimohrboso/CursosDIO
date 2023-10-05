@@ -1,0 +1,40 @@
+package com.giovani.banco;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.giovani.banco.modelos.Banco;
+import com.giovani.banco.modelos.Cliente;
+import com.giovani.banco.modelos.Conta;
+import com.giovani.banco.modelos.ContaCorrente;
+import com.giovani.banco.modelos.ContaPoupanca;
+
+public class Principal {
+	public static void main(String[] args) {
+		Banco banco = new Banco();
+		List listaContas = new ArrayList<Conta>();
+		Conta cc = new ContaCorrente(new Cliente("Giovani","006.208.189-98"));
+		listaContas.add(cc);
+		banco.setContas(listaContas);
+		
+		cc.depositar(1000);
+		
+		ContaPoupanca cp = new ContaPoupanca(new Cliente("Sandra","145-98"));
+		listaContas.add(cp);
+		banco.setContas(listaContas);
+		
+		cc.transferir(50, cp);
+		
+		cp.gerarJuros();
+				
+		banco.listarContas();
+		
+				
+	}
+	
+	
+	
+	
+	
+
+}

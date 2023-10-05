@@ -1,0 +1,14 @@
+package com.giovani.iphone;
+
+public class Pessoa {
+
+	public static void main(String[] args) {
+
+
+		Iphone iphone1 = new Iphone();
+		
+		iphone1.ligar();
+
+	}
+
+}

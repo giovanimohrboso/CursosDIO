@@ -1,0 +1,15 @@
+package com.giovani.banco.modelos;
+
+import java.util.List;
+
+public class Banco {
+	
+	private List<Conta> contas;
+	
+	public void listarContas() {
+		for (Conta conta:contas) {
+			System.out.println("Conta:"+conta);
+		}
+	}
+
+}

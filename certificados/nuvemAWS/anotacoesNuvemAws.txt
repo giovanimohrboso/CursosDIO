@@ -1,0 +1,27 @@
+IaaS - Infraestrutura como Serviço
+PaaS - Plataforma como Serviço
+SaaS - Software como Serviço
+CaaS - Conteiner como Serviço
+
+Regiões e Zonas - data center da aws
+
+Amazon S3 - servidor de armazenamento de arquivos
+Amazon EC2 - servidor de aplicação / processamento / maquina virtual
+Amazon RDS - serviço de banco de dados relacional
+Amazon SNS - Serviço de notificação / email
+Amazon DynamoDB - Serviço de banco de dados noSql
+Amazon Lambda - Servidor Serverless
+Amazon cloudFront - Serviço de distribuição de conteudo
+Amazon Elastic Beanstalk - Serviço de aplicação web
+Amazon SQS - Filas / mensageria
+
+IAM - Identity ans Access Management - Controle e fluxo de Usuários
+
+Monitoramento e Auditoria Interna
+Amazon CloudTrail
+Amazon CloudWatch
+
+Backup e Disaster Recovery
+Amazon Glacier
+Amazon EBS - Elastic Block Store
+

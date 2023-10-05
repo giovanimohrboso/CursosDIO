@@ -1,0 +1,5 @@
+package com.giovani.tipoEnum;
+
+public enum EstadosBrasileiros {
+
+}

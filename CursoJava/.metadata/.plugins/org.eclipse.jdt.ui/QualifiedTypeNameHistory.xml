@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="com.giovani.controlesDeFluxo.CepInvalidoException"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ThreadLocalRandom"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="com.giovani.iphone.Iphone"/>
+    <fullyQualifiedTypeName name="com.giovani.banco.modelos.Banco"/>
+    <fullyQualifiedTypeName name="com.giovani.banco.modelos.ContaCorrente"/>
+    <fullyQualifiedTypeName name="com.giovani.banco.modelos.Conta"/>
+    <fullyQualifiedTypeName name="com.giovani.banco.modelos.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="com.giovani.banco.modelos.Cliente"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

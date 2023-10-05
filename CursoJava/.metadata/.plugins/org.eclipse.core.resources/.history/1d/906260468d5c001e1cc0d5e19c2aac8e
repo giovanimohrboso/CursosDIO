@@ -1,0 +1,6 @@
+package com.giovani.banco.modelos;
+
+public class Cliente {
+	private String nome;
+	private String documento;
+}

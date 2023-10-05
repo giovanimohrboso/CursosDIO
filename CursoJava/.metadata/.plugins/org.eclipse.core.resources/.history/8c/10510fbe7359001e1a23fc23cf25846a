@@ -1,0 +1,27 @@
+package com.giovani.candidatura;
+
+public class ProcessoSelectivo {
+
+	public static void main(String[] args) {
+		System.out.println("PROCESSO SELECTIVO");
+		analizarCandidato(1900);
+		analizarCandidato(2000);
+		analizarCandidato(2100);
+		
+
+	}
+	
+	static void analizarCandidato(double salarioPretendido) {
+		
+		double salarioBase = 2000;
+		if (salarioPretendido < salarioBase) {
+			System.out.println("Ligar para o candidato");
+		}else if (salarioPretendido == salarioBase) {
+			System.out.println("Ligar para o candidato com contra proposta");
+		}else {
+			System.out.println("Aguardar mais candidatos");
+		}
+		
+	}
+
+}

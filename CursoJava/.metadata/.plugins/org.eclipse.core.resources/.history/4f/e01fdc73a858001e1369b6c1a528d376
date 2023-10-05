@@ -1,0 +1,15 @@
+package com.giovani.scanner;
+
+import java.util.Locale;
+
+public class ScannerPessoal {
+
+	public static void main(String[] args) {
+
+
+		Scanner scanner = new Scanner(System.in).userLocale(Locale.US);
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.giovani.operadores;
+
+public class Operadores {
+
+	public static void main(String[] args) {
+
+		String nome = "Giovani";
+		System.out.println(nome);
+		double soma = 10.5 + 15.7 ;
+		System.out.println(soma);
+		int subtracao = 10 - 5 ;
+		System.out.println(subtracao);
+		int modulo = 5 % 2;
+		System.out.println(modulo);
+		String nomeCompleto = "GIovani "+"Mohr "+"Boso";
+		System.out.println(nomeCompleto);
+		
+		String concatenacao = "?";
+		System.out.println(concatenacao);
+		concatenacao = 1+1+1+"1";
+		System.out.println(concatenacao);
+
+	}
+
+}

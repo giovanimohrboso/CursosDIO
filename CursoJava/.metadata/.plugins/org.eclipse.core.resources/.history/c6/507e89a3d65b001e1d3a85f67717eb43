@@ -1,0 +1,14 @@
+package com.giovani.tipoEnum;
+
+public class EnumsPrincipal {
+
+	public static void main(String[] args) {
+		
+		EstadosBrasileiros estados;
+		System.out.println(estados.SAO_PAULO.getNome());
+
+		
+
+	}
+
+}

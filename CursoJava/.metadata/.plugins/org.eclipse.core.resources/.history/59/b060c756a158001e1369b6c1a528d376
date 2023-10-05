@@ -1,0 +1,15 @@
+package com.giovani.metodos;
+
+public class Metodos {
+
+	public static void main(String[] args) {
+		Carro carro = new Carro();
+		carro.setModelo("Fusca");
+		carro.setCor("Branco"); 
+		carro.setAno(1980);
+		carro.acelerarCarro();
+		System.out.println("Possui"+carro.motor.getCavalos()+" cavalos");
+
+	}
+
+}

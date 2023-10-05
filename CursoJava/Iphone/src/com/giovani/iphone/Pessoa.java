@@ -1,0 +1,17 @@
+package com.giovani.iphone;
+
+public class Pessoa {
+
+	public static void main(String[] args) {
+
+
+		Iphone iphone = new Iphone("Iphone 1");
+		
+		System.out.println("Modelo "+ iphone.getModelo());
+		iphone.ligar();
+		iphone.tocar();
+		iphone.exibirPagina();
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.giovani.banco.modelos;
+
+public class Conta implements IConta{
+	
+	protected int agencia;
+	protected int numero;
+	protected double saldo;
+	protected Cliente cliente;
+	
+	@Override
+	public void depositar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sacar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void transferir() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void imprimirExtrato() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
