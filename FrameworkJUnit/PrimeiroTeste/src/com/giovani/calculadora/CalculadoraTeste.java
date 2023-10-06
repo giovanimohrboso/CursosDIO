@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class CalculadoraTeste {
 	
@@ -25,7 +27,16 @@ public class CalculadoraTeste {
 	@Test
 	public void testeDiminuir() {
 		
-		assertEquals(2, calc.diminuir(2, 1));
+		assertEquals(1, calc.diminuir(2, 1));
+		
+	}
+	
+	
+	@ParameterizedTest
+	@CsvSource({"1,2,2","2,4,8"})
+	public void testeMultiplicacao(int n1,int n2,int resultado) {
+		
+		assertEquals(resultado, calc.multiplicacao(n1, n2));
 		
 	}
 	
