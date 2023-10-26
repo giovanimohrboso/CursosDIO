@@ -1,0 +1,16 @@
+Instalar o typescript somente para o projeto
+npm install typescript -D
+
+Transpilação TS para JS
+npx tsc index.ts
+
+Arquivo de config TS
+npx tsc --init
+
+Rodar por script(package.json)
+criar o script start
+npm run start
+
+Servidor local node
+npm install ts-node-dev -D
+
