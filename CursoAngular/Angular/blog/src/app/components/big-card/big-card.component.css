@@ -11,17 +11,18 @@
 
 .photo__big-card{
   width: 400px;
-  height: 310px;
+  height: 400px;
 }
 
 .photo__big-card > img{
-  width: 100%;
+  width:100%;
   min-width: 400px;
+
+
 }
 
 .title__big-card > h1{
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 .title__big-card > h1 > a{
@@ -30,4 +31,5 @@
 
 .description__big-card p{
   color: gray;
+  margin: 10px;
 }
