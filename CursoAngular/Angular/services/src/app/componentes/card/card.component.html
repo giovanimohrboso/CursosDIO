@@ -1,0 +1,12 @@
+<input type="text" (input)="getPokemon($any($event.target).value)">
+<div class="card">
+  <div class="card__nome">
+    <h3>{{pokemon.name}}</h3>
+  </div>
+  <div class="card_corpo">
+    <img [src]="pokemon.sprites.front_default" alt="pokemon">
+  </div>
+  <div class="card_tipo">
+    <span class="card_tipo_descricao" *ngFor="let tipo of pokemon.types">{{tipo.type.name}}</span>
+  </div>
+</div>
